@@ -8,36 +8,40 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.example.tyr.R
 import com.example.tyr.databinding.ActivityLoginBinding
-import com.example.tyr.databinding.ActivityLoginMapBinding
 
-class LoginMapActivity : AppCompatActivity(), View.OnClickListener {
+class FAQActivity : AppCompatActivity(), View.OnClickListener {
 
     companion object {
         fun getIntent(context: Context): Intent {
-            var intent = Intent(context, LoginMapActivity::class.java)
+            var intent = Intent(context, FAQActivity::class.java)
             return intent
         }
     }
 
-    lateinit var binding: ActivityLoginMapBinding
+    lateinit var binding: ActivityLoginBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = DataBindingUtil.setContentView(this, R.layout.activity_login_map)
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_login)
         initialization()
 
     }
 
     fun initialization() {
-        binding.btnNext.setOnClickListener(this)
-
+        binding.btnSignIn.setOnClickListener(this)
+        binding.txtSignUp.setOnClickListener(this)
 
     }
 
 
     override fun onClick(view: View?) {
         when (view?.id) {
-            R.id.btnNext -> {
-                startActivity(UploadDocumentsActivity.getIntent(this))
+            R.id.btnSignIn -> {
+                startActivity(MainActivity.getIntent(this))
+                finish()
+            }
+            R.id.txtSignUp -> {
+                startActivity(SignUpActivity.getIntent(this))
+                finish()
             }
 
         }

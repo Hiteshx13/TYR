@@ -14,4 +14,10 @@
     <string name="already_have_an_account">Already have an account?</string>
     <string name="next">Next</string>
     <string name="upload_documents">Upload Documents</string>
+    <string name="upload_license">Upload License</string>
+    <string name="upload_insurance">Upload Insurance</string>
+    <string name="upload_void_cheque">Upload Void Cheque</string>
+    <string name="choose_photo">Choose Photo</string>
+    <string name="upload">Upload</string>
+    <string name="calender">Calender</string>
 </resources>

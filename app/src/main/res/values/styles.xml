@@ -17,6 +17,21 @@
         <item name="android:textColorHint">@color/colorWhiteTransText</item>
     </style>
 
+    <style name="StyleChooseButton">
+        <item name="android:background">@drawable/bg_white_right_rounded</item>
+        <item name="android:paddingTop">@dimen/_10sdp</item>
+        <item name="android:layout_width">@dimen/_100sdp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingBottom">@dimen/_10sdp</item>
+        <item name="android:paddingStart">@dimen/_20sdp</item>
+        <item name="android:paddingLeft">@dimen/_20sdp</item>
+        <item name="android:paddingEnd">@dimen/_20sdp</item>
+        <item name="android:paddingRight">@dimen/_20sdp</item>
+        <item name="android:textSize">@dimen/_8ssp</item>
+        <item name="fontFamily">@font/worksans_light</item>
+
+    </style>
+
     <style name="StyleEditTextWhite">
         <item name="android:background">@drawable/bg_edit_text_white</item>
         <item name="android:paddingTop">@dimen/_10sdp</item>

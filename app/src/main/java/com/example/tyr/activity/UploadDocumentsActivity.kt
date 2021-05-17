@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.example.tyr.R
 import com.example.tyr.databinding.ActivityLoginBinding
+import com.example.tyr.databinding.ActivityUploadDocumentsBinding
 
 class UploadDocumentsActivity : AppCompatActivity(), View.OnClickListener {
 
@@ -18,28 +19,27 @@ class UploadDocumentsActivity : AppCompatActivity(), View.OnClickListener {
         }
     }
 
-    lateinit var binding: ActivityLoginBinding
+    lateinit var binding: ActivityUploadDocumentsBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = DataBindingUtil.setContentView(this, R.layout.activity_login)
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_upload_documents)
         initialization()
 
     }
 
     fun initialization() {
-        binding.btnSignIn.setOnClickListener(this)
-        binding.txtSignUp.setOnClickListener(this)
+        binding.ivBack.setOnClickListener(this)
+        binding.btnSubmit.setOnClickListener(this)
 
     }
 
 
     override fun onClick(view: View?) {
         when (view?.id) {
-            R.id.btnSignIn -> {
-                startActivity(MainActivity.getIntent(this))
+            R.id.ivBack -> {
                 finish()
             }
-            R.id.txtSignUp -> {
+            R.id.btnSubmit -> {
                 startActivity(SignUpActivity.getIntent(this))
                 finish()
             }
