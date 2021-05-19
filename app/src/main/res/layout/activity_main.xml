@@ -1,11 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/bg_blue_black"
         tools:context=".activity.MainActivity">
+
+        <RelativeLayout
+            android:id="@+id/rlHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivNavigation"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:padding="@dimen/_12sdp"
+                android:src="@drawable/icn_down_white" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Heading"
+                android:layout_centerInParent="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_18ssp"
+                app:fontFamily="@font/worksans_medium" />
+        </RelativeLayout>
 
         <LinearLayout
             android:id="@+id/llMenu"
@@ -37,8 +61,7 @@
                 <androidx.appcompat.widget.AppCompatImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/selector_contacts"
-                      />
+                    android:src="@drawable/selector_contacts" />
 
             </LinearLayout>
 
@@ -60,10 +83,9 @@
         <FrameLayout
             android:id="@+id/frameLayout"
             android:layout_width="match_parent"
+            android:layout_below="@+id/rlHeading"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/llMenu"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="10dp" />
+            android:layout_above="@+id/llMenu"  />
 
     </RelativeLayout>
 </layout>

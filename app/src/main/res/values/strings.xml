@@ -20,4 +20,13 @@
     <string name="choose_photo">Choose Photo</string>
     <string name="upload">Upload</string>
     <string name="calender">Calender</string>
+    <string name="home">Home</string>
+    <string name="my_classes">My Classes</string>
+    <string name="chat">Chat</string>
+    <string name="my_profile">My Profile</string>
+    <string name="payouts">Payouts</string>
+    <string name="notifications">Notifications</string>
+    <string name="faq_s">FAQ\'s</string>
+    <string name="logout">Logout</string>
+    <string name="remaining_payouts">Remaining Payouts</string>
 </resources>

@@ -8,12 +8,14 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import com.example.tyr.R
+import com.example.tyr.`interface`.NavMenuClickListener
 import com.example.tyr.databinding.ActivityMainBinding
 import com.example.tyr.fragment.ContactsFragment
 import com.example.tyr.fragment.DashboardFragment
 import com.example.tyr.fragment.UsersFragment
+import com.example.tyr.utils.showMessageDialog
 
-class MainActivity : AppCompatActivity(), View.OnClickListener {
+class MainActivity : BaseActivity(), View.OnClickListener {
 
     companion object {
         fun getIntent(context: Context): Intent {
@@ -34,6 +36,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         binding.llTabHome.setOnClickListener(this)
         binding.llTabContact.setOnClickListener(this)
         binding.llTabUser.setOnClickListener(this)
+        binding.ivNavigation.setOnClickListener(this)
 
     }
 
@@ -65,6 +68,38 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 resetView()
                 binding.llTabUser.isSelected=true
                 replaceFragment(UsersFragment.newInstance(), false)
+            } R.id.ivNavigation -> {
+                showMessageDialog(this,object:NavMenuClickListener{
+                    override fun onClick(view: View) {
+                        when(view.id){
+
+                            R.id.llNavHome->{
+                                binding.llTabHome.callOnClick()
+                            }
+                            R.id.llNavMyClasses->{
+                                binding.llTabContact.callOnClick()
+                            }
+                            R.id.llNavChat->{
+
+                            }
+                            R.id.llNavMyProfile->{
+
+                            }
+                            R.id.llNavPayout->{
+                                launchActivity(PayoutsActivity.getIntent(mContext))
+                            }
+                            R.id.llNavNotifications->{
+                                launchActivity(NotificationsActivity.getIntent(mContext))
+                            }
+                            R.id.llNavFaq->{
+                                launchActivity(FAQActivity.getIntent(mContext))
+                            }
+                            R.id.llNavLogout->{
+                                finish()
+                            }
+                        }
+                    }
+                })
             }
         }
     }

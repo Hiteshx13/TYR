@@ -2,6 +2,7 @@
 <resources>
     <color name="colorPrimary">#FFBB86FC</color>
     <color name="colorPink">#FF00AA</color>
+    <color name="colorTransparent">#00000000</color>
     <color name="colorBlue">#1506F3</color>
     <color name="colorPinkLight">#BD00FF</color>
     <color name="colorWhite">#FFFFFF</color>

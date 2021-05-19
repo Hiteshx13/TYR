@@ -29,25 +29,17 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="@dimen/_7sdp"
                 android:fontFamily="@font/worksans_medium"
-                android:text="FAQ's"
+                android:text="@string/notifications"
                 android:textColor="@color/colorWhite"
                 android:textSize="@dimen/_15ssp" />
         </RelativeLayout>
 
-        <androidx.appcompat.widget.AppCompatTextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="@dimen/_7sdp"
-            android:fontFamily="@font/worksans_medium"
-            android:text="Class"
-            android:textColor="@color/colorWhite"
-            android:textSize="@dimen/_15ssp" />
+
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/drawable_white_cornered"
+            android:background="@drawable/drawable_yellow_cornered"
             android:orientation="vertical"
             android:layout_marginTop="@dimen/_10sdp"
             android:padding="@dimen/_10sdp">
@@ -61,15 +53,55 @@
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/worksans_light"
-                    android:text="1. Lorem Ipsum is simply dummy text "
-                    android:textColor="@color/colorYellow"
+                    android:fontFamily="@font/worksans_medium"
+                    android:text="• Lorem Ipsum"
+                    android:textColor="@color/colorBlack"
                     android:textSize="@dimen/_12ssp" />
 
-                <androidx.appcompat.widget.AppCompatImageView
-                    android:layout_width="@dimen/_10sdp"
-                    android:layout_height="@dimen/_10sdp"
-                    android:src="@drawable/icn_add_yellow"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_10ssp"
+                    android:fontFamily="@font/worksans_medium"
+                    android:text="10-Apr-2021"/>
+            </LinearLayout>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/worksans_light"
+                android:text="@string/dummy_text"
+                android:maxLines="2"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_12ssp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/drawable_yellow_cornered"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:padding="@dimen/_10sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/worksans_medium"
+                    android:text="• Lorem Ipsum"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_12ssp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_10ssp"
+                    android:fontFamily="@font/worksans_medium"
+                    android:text="10-Apr-2021"/>
             </LinearLayout>
             <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="wrap_content"
@@ -84,11 +116,9 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_10sdp"
             android:background="@drawable/drawable_white_cornered"
             android:orientation="vertical"
-            android:paddingTop="@dimen/_5sdp"
-            android:paddingBottom="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_10sdp"
             android:padding="@dimen/_10sdp">
 
             <LinearLayout
@@ -101,36 +131,32 @@
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/worksans_medium"
-                    android:text="2. Lorem Ipsum is simply dummy text "
+                    android:text="• Lorem Ipsum"
                     android:textColor="@color/colorBlack"
                     android:textSize="@dimen/_12ssp" />
 
-                <androidx.appcompat.widget.AppCompatImageView
-                    android:layout_width="@dimen/_10sdp"
-                    android:layout_height="@dimen/_10sdp"
-                    android:tint="@color/colorBlack"
-                    android:src="@drawable/icn_minus_rounded_black"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_10ssp"
+                    android:fontFamily="@font/worksans_medium"
+                    android:text="10-Apr-2021"/>
             </LinearLayout>
-
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/worksans_light"
+                android:text="@string/dummy_text"
+                android:maxLines="2"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_12ssp" />
         </LinearLayout>
-
-        <androidx.appcompat.widget.AppCompatTextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="@dimen/_15sdp"
-            android:fontFamily="@font/worksans_medium"
-            android:text="Booking"
-            android:textColor="@color/colorWhite"
-            android:textSize="@dimen/_15ssp" />
-        <LinearLayout
+ <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_10sdp"
             android:background="@drawable/drawable_white_cornered"
             android:orientation="vertical"
-            android:paddingTop="@dimen/_5sdp"
-            android:paddingBottom="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_10sdp"
             android:padding="@dimen/_10sdp">
 
             <LinearLayout
@@ -143,26 +169,32 @@
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/worksans_medium"
-                    android:text="3. Lorem Ipsum is simply dummy text "
+                    android:text="• Lorem Ipsum"
                     android:textColor="@color/colorBlack"
                     android:textSize="@dimen/_12ssp" />
 
-                <androidx.appcompat.widget.AppCompatImageView
-                    android:layout_width="@dimen/_10sdp"
-                    android:layout_height="@dimen/_10sdp"
-                    android:tint="@color/colorBlack"
-                    android:src="@drawable/icn_minus_rounded_black"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_10ssp"
+                    android:fontFamily="@font/worksans_medium"
+                    android:text="10-Apr-2021"/>
             </LinearLayout>
-
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/worksans_light"
+                android:text="@string/dummy_text"
+                android:maxLines="2"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_12ssp" />
         </LinearLayout>
-        <LinearLayout
+ <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_10sdp"
             android:background="@drawable/drawable_white_cornered"
             android:orientation="vertical"
-            android:paddingTop="@dimen/_5sdp"
-            android:paddingBottom="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_10sdp"
             android:padding="@dimen/_10sdp">
 
             <LinearLayout
@@ -175,123 +207,27 @@
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/worksans_medium"
-                    android:text="4. Lorem Ipsum is simply dummy text "
+                    android:text="• Lorem Ipsum"
                     android:textColor="@color/colorBlack"
                     android:textSize="@dimen/_12ssp" />
 
-                <androidx.appcompat.widget.AppCompatImageView
-                    android:layout_width="@dimen/_10sdp"
-                    android:layout_height="@dimen/_10sdp"
-                    android:tint="@color/colorBlack"
-                    android:src="@drawable/icn_minus_rounded_black"/>
-            </LinearLayout>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_10sdp"
-            android:background="@drawable/drawable_white_cornered"
-            android:orientation="vertical"
-            android:paddingTop="@dimen/_5sdp"
-            android:paddingBottom="@dimen/_5sdp"
-            android:padding="@dimen/_10sdp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_vertical"
-                android:orientation="horizontal">
                 <androidx.appcompat.widget.AppCompatTextView
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textSize="@dimen/_10ssp"
                     android:fontFamily="@font/worksans_medium"
-                    android:text="5. Lorem Ipsum is simply dummy text "
-                    android:textColor="@color/colorBlack"
-                    android:textSize="@dimen/_12ssp" />
-
-                <androidx.appcompat.widget.AppCompatImageView
-                    android:layout_width="@dimen/_10sdp"
-                    android:layout_height="@dimen/_10sdp"
-                    android:tint="@color/colorBlack"
-                    android:src="@drawable/icn_minus_rounded_black"/>
+                    android:text="10-Apr-2021"/>
             </LinearLayout>
-
-        </LinearLayout>
-        <androidx.appcompat.widget.AppCompatTextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="@dimen/_15sdp"
-            android:fontFamily="@font/worksans_medium"
-            android:text="Cancelation"
-            android:textColor="@color/colorWhite"
-            android:textSize="@dimen/_15ssp" />
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_10sdp"
-            android:background="@drawable/drawable_white_cornered"
-            android:orientation="vertical"
-            android:paddingTop="@dimen/_5sdp"
-            android:paddingBottom="@dimen/_5sdp"
-            android:padding="@dimen/_10sdp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center_vertical"
-                android:orientation="horizontal">
-                <androidx.appcompat.widget.AppCompatTextView
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/worksans_medium"
-                    android:text="6. Lorem Ipsum is simply dummy text "
-                    android:textColor="@color/colorBlack"
-                    android:textSize="@dimen/_12ssp" />
-
-                <androidx.appcompat.widget.AppCompatImageView
-                    android:layout_width="@dimen/_10sdp"
-                    android:layout_height="@dimen/_10sdp"
-                    android:tint="@color/colorBlack"
-                    android:src="@drawable/icn_minus_rounded_black"/>
-            </LinearLayout>
-
+                android:fontFamily="@font/worksans_light"
+                android:text="@string/dummy_text"
+                android:maxLines="2"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_12ssp" />
         </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_10sdp"
-            android:background="@drawable/drawable_white_cornered"
-            android:orientation="vertical"
-            android:paddingTop="@dimen/_5sdp"
-            android:paddingBottom="@dimen/_5sdp"
-            android:padding="@dimen/_10sdp">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_vertical"
-                android:orientation="horizontal">
-                <androidx.appcompat.widget.AppCompatTextView
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/worksans_medium"
-                    android:text="7. Lorem Ipsum is simply dummy text "
-                    android:textColor="@color/colorBlack"
-                    android:textSize="@dimen/_12ssp" />
 
-                <androidx.appcompat.widget.AppCompatImageView
-                    android:layout_width="@dimen/_10sdp"
-                    android:layout_height="@dimen/_10sdp"
-                    android:tint="@color/colorBlack"
-                    android:src="@drawable/icn_minus_rounded_black"/>
-            </LinearLayout>
-
-        </LinearLayout>
     </LinearLayout>
 </layout>

@@ -33,7 +33,7 @@
     </style>
 
     <style name="StyleEditTextWhite">
-        <item name="android:background">@drawable/bg_edit_text_white</item>
+        <item name="android:background">@drawable/drawable_white_cornered</item>
         <item name="android:paddingTop">@dimen/_10sdp</item>
         <item name="android:paddingBottom">@dimen/_10sdp</item>
         <item name="android:paddingStart">@dimen/_20sdp</item>
