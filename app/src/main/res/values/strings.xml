@@ -38,4 +38,8 @@
     <string name="cancel">Cancel</string>
 
     <string name="save">Save</string>
+    <string name="manoeuvres">Manoeuvres</string>
+    <string name="time_date"><![CDATA[Time & Date]]></string>
+    <string name="start_trip">Start Trip</string>
+    <string name="end_trip">End Trip</string>
 </resources>

@@ -7,27 +7,26 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.example.tyr.R
-import com.example.tyr.databinding.ActivityUploadDocumentsBinding
+import com.example.tyr.databinding.ActivityEndTripRepotyCardsBinding
 
-class UploadDocumentsActivity : AppCompatActivity(), View.OnClickListener {
+class EndTripReportCardsActivity : BaseActivity(), View.OnClickListener {
 
     companion object {
         fun getIntent(context: Context): Intent {
-            var intent = Intent(context, UploadDocumentsActivity::class.java)
+            var intent = Intent(context, EndTripReportCardsActivity::class.java)
             return intent
         }
     }
 
-    lateinit var binding: ActivityUploadDocumentsBinding
+    lateinit var binding: ActivityEndTripRepotyCardsBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = DataBindingUtil.setContentView(this, R.layout.activity_upload_documents)
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_end_trip_repoty_cards)
         initialization()
 
     }
 
     fun initialization() {
-        binding.ivBack.setOnClickListener(this)
         binding.btnSubmit.setOnClickListener(this)
 
     }
@@ -39,7 +38,7 @@ class UploadDocumentsActivity : AppCompatActivity(), View.OnClickListener {
                 finish()
             }
             R.id.btnSubmit -> {
-                startActivity(MainActivity.getIntent(this))
+                launchActivity(EndTripMessageActivity.getIntent(mContext))
                 finish()
             }
 

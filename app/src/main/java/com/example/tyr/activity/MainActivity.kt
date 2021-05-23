@@ -106,7 +106,7 @@ class MainActivity : BaseActivity(), View.OnClickListener {
                                 launchActivity(ChatActivity.getIntent(mContext))
                             }
                             R.id.llNavMyProfile -> {
-
+                                binding.llTabUser.callOnClick()
                             }
                             R.id.llNavPayout -> {
                                 launchActivity(PayoutsActivity.getIntent(mContext))

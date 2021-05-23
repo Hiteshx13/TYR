@@ -36,7 +36,7 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
     override fun onClick(view: View?) {
         when (view?.id) {
             R.id.btnSignIn -> {
-                startActivity(MainActivity.getIntent(this))
+                startActivity(LoginMapActivity.getIntent(this))
                 finish()
             }
             R.id.txtSignUp -> {

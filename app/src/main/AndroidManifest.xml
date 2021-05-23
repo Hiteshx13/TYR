@@ -17,6 +17,13 @@
         <activity android:name=".activity.PayoutsActivity" />
         <activity android:name=".activity.ChatActivity" />
         <activity android:name=".activity.ConversationsActivity" />
+        <activity android:name=".activity.ReportCardsActivity" />
+        <activity android:name=".activity.LoginMapActivity" />
+        <activity android:name=".activity.UploadDocumentsActivity" />
+        <activity android:name=".activity.StartTripActivity" />
+        <activity android:name=".activity.EndTripActivity" />
+        <activity android:name=".activity.EndTripMessageActivity" />
+        <activity android:name=".activity.PerformanceActivity" />
         <activity android:name=".activity.UserDataActivity" />
         <activity android:name=".activity.EditProfileActivity" />
         <activity android:name=".activity.SplashActivity">

@@ -9,8 +9,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.tyr.R
 import com.example.tyr.`interface`.CompleteListener
 import com.example.tyr.`interface`.UpcomingListener
-import com.example.tyr.activity.ChatActivity
-import com.example.tyr.activity.UserDataActivity
+import com.example.tyr.activity.*
 import com.example.tyr.adapters.CompletedAdapter
 import com.example.tyr.adapters.UpcomingAdapter
 import com.example.tyr.databinding.FragmentContactsBinding
@@ -57,9 +56,9 @@ class ContactsFragment : BaseFragment(), View.OnClickListener {
                 binding.viewRemainingPayout.isSelected = false
 
                 binding.rvData.adapter = null
-                binding.rvData.adapter = CompletedAdapter(mContext, 30,object:CompleteListener{
+                binding.rvData.adapter = CompletedAdapter(mContext, 30, object : CompleteListener {
                     override fun onClickPerformance(view: View) {
-                        TODO("Not yet implemented")
+                        launchActivity(PerformanceActivity.getIntent(mContext))
                     }
 
                     override fun onClickProfile(view: View) {
@@ -75,17 +74,17 @@ class ContactsFragment : BaseFragment(), View.OnClickListener {
                 binding.viewRemainingPayout.isSelected = true
 
                 binding.rvData.adapter = null
-                binding.rvData.adapter = UpcomingAdapter(mContext, 30,object: UpcomingListener{
+                binding.rvData.adapter = UpcomingAdapter(mContext, 30, object : UpcomingListener {
                     override fun onClickReportCards(view: View) {
-                        TODO("Not yet implemented")
+                        launchActivity(ReportCardsActivity.getIntent(mContext))
                     }
 
                     override fun onClickCancel(view: View) {
-                        TODO("Not yet implemented")
+
                     }
 
                     override fun onClickReschedule(view: View) {
-                        TODO("Not yet implemented")
+                        launchActivity(StartTripActivity.getIntent(mContext))
                     }
 
                     override fun onClickMessage(view: View) {

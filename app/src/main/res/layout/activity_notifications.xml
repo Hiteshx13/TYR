@@ -18,10 +18,11 @@
             android:orientation="horizontal">
 
             <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivBack"
                 android:layout_width="@dimen/_30sdp"
                 android:layout_height="@dimen/_30sdp"
                 android:padding="@dimen/_7sdp"
-                android:src="@drawable/icn_down_white" />
+                android:src="@drawable/icn_arrow_left_white" />
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="wrap_content"

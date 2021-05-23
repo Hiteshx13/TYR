@@ -12,10 +12,10 @@ class SplashActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
 
-         Handler().postDelayed(Runnable {
+        Handler().postDelayed(Runnable {
             launchActivity(LoginActivity.getIntent(this))
-
-         }, SPLASH_TIME_OUT.toLong())
+            finish()
+        }, SPLASH_TIME_OUT.toLong())
 
     }
 }

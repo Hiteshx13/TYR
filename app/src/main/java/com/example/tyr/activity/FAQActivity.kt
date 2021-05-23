@@ -28,7 +28,9 @@ class FAQActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     fun initialization() {
-
+        binding.ivBack.setOnClickListener {
+            finish()
+        }
 
     }
 

@@ -7,28 +7,27 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.example.tyr.R
-import com.example.tyr.databinding.ActivityUploadDocumentsBinding
+import com.example.tyr.databinding.ActivityRepotyCardsBinding
 
-class UploadDocumentsActivity : AppCompatActivity(), View.OnClickListener {
+class ReportCardsActivity : AppCompatActivity(), View.OnClickListener {
 
     companion object {
         fun getIntent(context: Context): Intent {
-            var intent = Intent(context, UploadDocumentsActivity::class.java)
+            var intent = Intent(context, ReportCardsActivity::class.java)
             return intent
         }
     }
 
-    lateinit var binding: ActivityUploadDocumentsBinding
+    lateinit var binding: ActivityRepotyCardsBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = DataBindingUtil.setContentView(this, R.layout.activity_upload_documents)
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_repoty_cards)
         initialization()
 
     }
 
     fun initialization() {
         binding.ivBack.setOnClickListener(this)
-        binding.btnSubmit.setOnClickListener(this)
 
     }
 
@@ -36,10 +35,6 @@ class UploadDocumentsActivity : AppCompatActivity(), View.OnClickListener {
     override fun onClick(view: View?) {
         when (view?.id) {
             R.id.ivBack -> {
-                finish()
-            }
-            R.id.btnSubmit -> {
-                startActivity(MainActivity.getIntent(this))
                 finish()
             }
 

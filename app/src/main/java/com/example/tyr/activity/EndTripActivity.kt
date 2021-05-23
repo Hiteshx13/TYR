@@ -7,39 +7,37 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.example.tyr.R
-import com.example.tyr.databinding.ActivityUploadDocumentsBinding
+import com.example.tyr.databinding.ActivityEndTripBinding
+import com.example.tyr.databinding.ActivityFaqBinding
+import com.example.tyr.databinding.ActivityLoginBinding
 
-class UploadDocumentsActivity : AppCompatActivity(), View.OnClickListener {
+class EndTripActivity : BaseActivity(), View.OnClickListener {
 
     companion object {
         fun getIntent(context: Context): Intent {
-            var intent = Intent(context, UploadDocumentsActivity::class.java)
+            var intent = Intent(context, EndTripActivity::class.java)
             return intent
         }
     }
 
-    lateinit var binding: ActivityUploadDocumentsBinding
+    lateinit var binding: ActivityEndTripBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = DataBindingUtil.setContentView(this, R.layout.activity_upload_documents)
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_end_trip)
         initialization()
 
     }
 
     fun initialization() {
-        binding.ivBack.setOnClickListener(this)
-        binding.btnSubmit.setOnClickListener(this)
+        binding.btnEndTrip.setOnClickListener(this)
 
     }
 
 
     override fun onClick(view: View?) {
         when (view?.id) {
-            R.id.ivBack -> {
-                finish()
-            }
-            R.id.btnSubmit -> {
-                startActivity(MainActivity.getIntent(this))
+            R.id.btnEndTrip->{
+                launchActivity(EndTripReportCardsActivity.getIntent(mContext))
                 finish()
             }
 
