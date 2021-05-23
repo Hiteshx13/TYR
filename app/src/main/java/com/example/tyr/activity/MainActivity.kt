@@ -80,7 +80,7 @@ class MainActivity : BaseActivity(), View.OnClickListener {
                                 binding.llTabContact.callOnClick()
                             }
                             R.id.llNavChat->{
-
+                                launchActivity(ChatActivity.getIntent(mContext))
                             }
                             R.id.llNavMyProfile->{
 

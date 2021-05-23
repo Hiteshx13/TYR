@@ -8,6 +8,7 @@
     <color name="colorWhite">#FFFFFF</color>
     <color name="colorWhiteTransText">#6FFFFFFF</color>
     <color name="colorWhiteTrans">#2AFFFFFF</color>
+    <color name="colorWhiteTransLess">#5EFFFFFF</color>
     <color name="colorBlackTrans">#57000000</color>
     <color name="colorBlack">#000000</color>
     <color name="colorYellow">#FFBE00</color>

@@ -29,4 +29,10 @@
     <string name="faq_s">FAQ\'s</string>
     <string name="logout">Logout</string>
     <string name="remaining_payouts">Remaining Payouts</string>
+    <string name="write_message">Write Message</string>
+    <string name="upcoming">Upcoming</string>
+    <string name="completed">Completed</string>
+    <string name="performance">Performance</string>
+    <string name="reschedule">Reschedule</string>
+    <string name="cancel">Cancel</string>
 </resources>

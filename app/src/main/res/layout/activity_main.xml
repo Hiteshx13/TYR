@@ -35,6 +35,8 @@
             android:id="@+id/llMenu"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_70sdp"
+            android:background="@drawable/bg_tab_blue"
+            android:gravity="bottom"
             android:layout_alignParentBottom="true">
 
             <LinearLayout

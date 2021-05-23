@@ -15,6 +15,7 @@
         <activity android:name=".activity.NotificationsActivity" />
         <activity android:name=".activity.FAQActivity" />
         <activity android:name=".activity.PayoutsActivity" />
+        <activity android:name=".activity.ChatActivity" />
         <activity android:name=".activity.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
