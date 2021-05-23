@@ -31,12 +31,16 @@ class StartTripActivity : BaseActivity(), View.OnClickListener {
 
     fun initialization() {
         binding.btnStartTrip.setOnClickListener(this)
+        binding.ivBack.setOnClickListener(this)
 
     }
 
 
     override fun onClick(view: View?) {
         when (view?.id) {
+            R.id.ivBack->{
+                finish()
+            }
             R.id.btnStartTrip->{
                 launchActivity(EndTripActivity.getIntent(mContext))
                 finish()

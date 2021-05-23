@@ -7,26 +7,66 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="portrait"
         android:supportsRtl="true"
         android:theme="@style/AppThemeNoTitle">
-        <activity android:name=".activity.MainActivity" />
-        <activity android:name=".activity.LoginActivity" />
-        <activity android:name=".activity.SignUpActivity" />
-        <activity android:name=".activity.NotificationsActivity" />
-        <activity android:name=".activity.FAQActivity" />
-        <activity android:name=".activity.PayoutsActivity" />
-        <activity android:name=".activity.ChatActivity" />
-        <activity android:name=".activity.ConversationsActivity" />
-        <activity android:name=".activity.ReportCardsActivity" />
-        <activity android:name=".activity.LoginMapActivity" />
-        <activity android:name=".activity.UploadDocumentsActivity" />
-        <activity android:name=".activity.StartTripActivity" />
-        <activity android:name=".activity.EndTripActivity" />
-        <activity android:name=".activity.EndTripMessageActivity" />
-        <activity android:name=".activity.PerformanceActivity" />
-        <activity android:name=".activity.UserDataActivity" />
-        <activity android:name=".activity.EditProfileActivity" />
-        <activity android:name=".activity.SplashActivity">
+        <activity
+            android:name=".activity.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SignUpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.NotificationsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FAQActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PayoutsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ChatActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ConversationsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ReportCardsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LoginMapActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.UploadDocumentsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.EndTripReportCardsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.StartTripActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.EndTripActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.EndTripMessageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PerformanceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.UserDataActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.EditProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SplashActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

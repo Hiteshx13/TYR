@@ -28,6 +28,7 @@ class EndTripReportCardsActivity : BaseActivity(), View.OnClickListener {
 
     fun initialization() {
         binding.btnSubmit.setOnClickListener(this)
+        binding.ivBack.setOnClickListener(this)
 
     }
 

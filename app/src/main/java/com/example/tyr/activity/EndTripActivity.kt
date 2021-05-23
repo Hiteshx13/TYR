@@ -30,12 +30,16 @@ class EndTripActivity : BaseActivity(), View.OnClickListener {
 
     fun initialization() {
         binding.btnEndTrip.setOnClickListener(this)
+        binding.ivBack.setOnClickListener(this)
 
     }
 
 
     override fun onClick(view: View?) {
         when (view?.id) {
+            R.id.ivBack->{
+                finish()
+            }
             R.id.btnEndTrip->{
                 launchActivity(EndTripReportCardsActivity.getIntent(mContext))
                 finish()
