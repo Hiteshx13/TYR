@@ -1,6 +1,7 @@
 package com.example.tyr.fragment
 
 import android.content.Context
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.tyr.activity.BaseActivity
@@ -18,5 +19,10 @@ open class BaseFragment : Fragment() {
 
     fun getParentActivity(): BaseActivity {
         return mActivity as BaseActivity
+    }
+
+
+    open fun launchActivity(intent: Intent) {
+        mActivity.startActivity(intent)
     }
 }

@@ -7,4 +7,5 @@ interface UpcomingListener {
     fun onClickCancel(view: View)
     fun onClickReschedule(view: View)
     fun onClickMessage(view: View)
+    fun onClickProfile(view: View)
 }

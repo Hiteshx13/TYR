@@ -4,6 +4,15 @@
     <!-- Base application theme. -->
 
 
+    <style name="StyleEditTextNormal">
+        <item name="android:paddingTop">@dimen/_10sdp</item>
+        <item name="android:paddingBottom">@dimen/_10sdp</item>
+         <item name="android:paddingEnd">@dimen/_20sdp</item>
+        <item name="android:paddingRight">@dimen/_20sdp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="fontFamily">@font/worksans_light</item>
+        <item name="android:textColorHint">@color/colorWhiteTransText</item>
+    </style>
     <style name="StyleEditText">
         <item name="android:background">@drawable/bg_edit_text</item>
         <item name="android:paddingTop">@dimen/_10sdp</item>

@@ -2,6 +2,7 @@
     <string name="app_name">TYR</string>
     <string name="welcome">Welcome</string>
     <string name="dummy_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry</string>
+    <string name="dummy_text_large"> Lorem Ipsum has been the industry Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry</string>
     <string name="user_name">User Name</string>
     <string name="forgot_password">Forgot Password?</string>
     <string name="sign_in">Sign In</string>
@@ -35,4 +36,6 @@
     <string name="performance">Performance</string>
     <string name="reschedule">Reschedule</string>
     <string name="cancel">Cancel</string>
+
+    <string name="save">Save</string>
 </resources>

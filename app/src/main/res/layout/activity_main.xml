@@ -8,36 +8,14 @@
         android:background="@drawable/bg_blue_black"
         tools:context=".activity.MainActivity">
 
-        <RelativeLayout
-            android:id="@+id/rlHeading"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/ivNavigation"
-                android:layout_width="@dimen/_40sdp"
-                android:layout_height="@dimen/_40sdp"
-                android:layout_marginTop="@dimen/_10sdp"
-                android:padding="@dimen/_12sdp"
-                android:src="@drawable/icn_down_white" />
-
-            <androidx.appcompat.widget.AppCompatTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                tools:text="Heading"
-                android:layout_centerInParent="true"
-                android:textColor="@color/colorWhite"
-                android:textSize="@dimen/_18ssp"
-                app:fontFamily="@font/worksans_medium" />
-        </RelativeLayout>
 
         <LinearLayout
             android:id="@+id/llMenu"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_70sdp"
+            android:layout_alignParentBottom="true"
             android:background="@drawable/bg_tab_blue"
-            android:gravity="bottom"
-            android:layout_alignParentBottom="true">
+            android:gravity="bottom">
 
             <LinearLayout
                 android:id="@+id/llTabHome"
@@ -85,9 +63,45 @@
         <FrameLayout
             android:id="@+id/frameLayout"
             android:layout_width="match_parent"
-            android:layout_below="@+id/rlHeading"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/llMenu"  />
+            android:layout_above="@+id/llMenu" />
 
+        <RelativeLayout
+            android:id="@+id/rlHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivNavigation"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:padding="@dimen/_12sdp"
+                android:src="@drawable/icn_down_white" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:layout_toRightOf="@+id/ivNavigation"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_18ssp"
+                android:layout_toLeftOf="@+id/ivRight"
+                app:fontFamily="@font/worksans_medium"
+                tools:text="Heading" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivRight"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:padding="@dimen/_12sdp"
+                android:src="@drawable/icn_down_white" />
+
+        </RelativeLayout>
     </RelativeLayout>
 </layout>

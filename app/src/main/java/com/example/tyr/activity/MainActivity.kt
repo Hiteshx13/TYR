@@ -4,7 +4,6 @@ import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
-import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import com.example.tyr.R
@@ -25,6 +24,7 @@ class MainActivity : BaseActivity(), View.OnClickListener {
     }
 
     lateinit var binding: ActivityMainBinding
+    private var TAB_SELECTED = 0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
@@ -37,6 +37,7 @@ class MainActivity : BaseActivity(), View.OnClickListener {
         binding.llTabContact.setOnClickListener(this)
         binding.llTabUser.setOnClickListener(this)
         binding.ivNavigation.setOnClickListener(this)
+        binding.ivRight.setOnClickListener(this)
 
     }
 
@@ -56,45 +57,67 @@ class MainActivity : BaseActivity(), View.OnClickListener {
 
             R.id.llTabHome -> {
                 resetView()
-                binding.llTabHome.isSelected=true
+                TAB_SELECTED = 0
+                binding.ivRight.visibility = View.GONE
+                binding.llTabHome.isSelected = true
                 replaceFragment(DashboardFragment.newInstance(), false)
             }
             R.id.llTabContact -> {
+                TAB_SELECTED = 1
                 resetView()
-                binding.llTabContact.isSelected=true
+                binding.llTabContact.isSelected = true
                 replaceFragment(ContactsFragment.newInstance(), false)
+                binding.ivRight.visibility = View.VISIBLE
+                binding.ivRight.setImageDrawable(getDrawable(R.drawable.icn_calendar))
             }
             R.id.llTabUser -> {
+                TAB_SELECTED = 2
                 resetView()
-                binding.llTabUser.isSelected=true
+                binding.llTabUser.isSelected = true
                 replaceFragment(UsersFragment.newInstance(), false)
-            } R.id.ivNavigation -> {
-                showMessageDialog(this,object:NavMenuClickListener{
-                    override fun onClick(view: View) {
-                        when(view.id){
+                binding.ivRight.visibility = View.VISIBLE
+                binding.ivRight.setImageDrawable(getDrawable(R.drawable.ic_pen))
+            }
 
-                            R.id.llNavHome->{
+            R.id.ivRight -> {
+                when (TAB_SELECTED) {
+                    1 -> {
+
+                    }
+                    2 -> {
+                        launchActivity(EditProfileActivity.getIntent(mContext))
+                    }
+
+                }
+
+            }
+            R.id.ivNavigation -> {
+                showMessageDialog(this, object : NavMenuClickListener {
+                    override fun onClick(view: View) {
+                        when (view.id) {
+
+                            R.id.llNavHome -> {
                                 binding.llTabHome.callOnClick()
                             }
-                            R.id.llNavMyClasses->{
+                            R.id.llNavMyClasses -> {
                                 binding.llTabContact.callOnClick()
                             }
-                            R.id.llNavChat->{
+                            R.id.llNavChat -> {
                                 launchActivity(ChatActivity.getIntent(mContext))
                             }
-                            R.id.llNavMyProfile->{
+                            R.id.llNavMyProfile -> {
 
                             }
-                            R.id.llNavPayout->{
+                            R.id.llNavPayout -> {
                                 launchActivity(PayoutsActivity.getIntent(mContext))
                             }
-                            R.id.llNavNotifications->{
+                            R.id.llNavNotifications -> {
                                 launchActivity(NotificationsActivity.getIntent(mContext))
                             }
-                            R.id.llNavFaq->{
+                            R.id.llNavFaq -> {
                                 launchActivity(FAQActivity.getIntent(mContext))
                             }
-                            R.id.llNavLogout->{
+                            R.id.llNavLogout -> {
                                 finish()
                             }
                         }
@@ -104,9 +127,9 @@ class MainActivity : BaseActivity(), View.OnClickListener {
         }
     }
 
-    fun resetView(){
-        binding.llTabHome.isSelected=false
-        binding.llTabUser.isSelected=false
-        binding.llTabContact.isSelected=false
+    fun resetView() {
+        binding.llTabHome.isSelected = false
+        binding.llTabUser.isSelected = false
+        binding.llTabContact.isSelected = false
     }
 }

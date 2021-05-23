@@ -54,6 +54,9 @@ class UpcomingAdapter(
             binding.ivMessage.setOnClickListener {
                 listener.onClickMessage(it)
             }
+            binding.ivProfile.setOnClickListener {
+                listener.onClickProfile(it)
+            }
         }
     }
 }

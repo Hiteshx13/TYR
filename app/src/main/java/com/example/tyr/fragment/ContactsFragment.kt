@@ -7,7 +7,10 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.tyr.R
+import com.example.tyr.`interface`.CompleteListener
 import com.example.tyr.`interface`.UpcomingListener
+import com.example.tyr.activity.ChatActivity
+import com.example.tyr.activity.UserDataActivity
 import com.example.tyr.adapters.CompletedAdapter
 import com.example.tyr.adapters.UpcomingAdapter
 import com.example.tyr.databinding.FragmentContactsBinding
@@ -54,7 +57,15 @@ class ContactsFragment : BaseFragment(), View.OnClickListener {
                 binding.viewRemainingPayout.isSelected = false
 
                 binding.rvData.adapter = null
-                binding.rvData.adapter = CompletedAdapter(mContext, 30)
+                binding.rvData.adapter = CompletedAdapter(mContext, 30,object:CompleteListener{
+                    override fun onClickPerformance(view: View) {
+                        TODO("Not yet implemented")
+                    }
+
+                    override fun onClickProfile(view: View) {
+                        launchActivity(UserDataActivity.getIntent(mContext))
+                    }
+                })
             }
             R.id.llTabUpcoming -> {
                 binding.tvPayout.isSelected = false
@@ -78,7 +89,11 @@ class ContactsFragment : BaseFragment(), View.OnClickListener {
                     }
 
                     override fun onClickMessage(view: View) {
-                        TODO("Not yet implemented")
+                        launchActivity(ChatActivity.getIntent(mContext))
+                    }
+
+                    override fun onClickProfile(view: View) {
+                        launchActivity(UserDataActivity.getIntent(mContext))
                     }
                 })
             }
