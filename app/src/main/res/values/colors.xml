@@ -15,6 +15,7 @@
     <color name="colorBlackTrans">#57000000</color>
     <color name="colorBlack">#000000</color>
     <color name="colorYellow">#FFBE00</color>
-    <color name="colorGreen">#0B585A</color>
+    <color name="colorRed">#F31212</color>
+    <color name="colorGreen">#169308</color>
 
 </resources>

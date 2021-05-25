@@ -65,6 +65,9 @@
             android:name=".activity.EditProfileActivity"
             android:screenOrientation="portrait" />
         <activity
+            android:name=".activity.CalenderActivity"
+            android:screenOrientation="portrait" />
+        <activity
             android:name=".activity.SplashActivity"
             android:screenOrientation="portrait">
             <intent-filter>

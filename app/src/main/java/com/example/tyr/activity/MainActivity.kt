@@ -82,7 +82,7 @@ class MainActivity : BaseActivity(), View.OnClickListener {
             R.id.ivRight -> {
                 when (TAB_SELECTED) {
                     1 -> {
-
+                        launchActivity(CalenderActivity.getIntent(mContext))
                     }
                     2 -> {
                         launchActivity(EditProfileActivity.getIntent(mContext))

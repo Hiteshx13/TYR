@@ -391,7 +391,7 @@
                     android:layout_width="@dimen/_110sdp"
                     android:layout_height="@dimen/_110sdp"
                     android:background="@drawable/icn_polygon"
-                    android:text="Calender    "
+                    android:text="Finances    "
                     android:textAllCaps="false"
                     android:textSize="@dimen/_13ssp"
                     android:textColor="@color/colorWhite"/>

@@ -7,39 +7,42 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.example.tyr.R
-import com.example.tyr.databinding.ActivityLoginBinding
-import com.example.tyr.databinding.ActivityLoginMapBinding
+import com.example.tyr.databinding.ActivityCalenderBinding
 
-class LoginMapActivity : AppCompatActivity(), View.OnClickListener {
+class CalenderActivity : BaseActivity(), View.OnClickListener {
 
     companion object {
         fun getIntent(context: Context): Intent {
-            var intent = Intent(context, LoginMapActivity::class.java)
+            var intent = Intent(context, CalenderActivity::class.java)
             return intent
         }
     }
 
-    lateinit var binding: ActivityLoginMapBinding
+    lateinit var binding: ActivityCalenderBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = DataBindingUtil.setContentView(this, R.layout.activity_login_map)
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_calender)
         initialization()
 
     }
 
     fun initialization() {
-        binding.btnNext.setOnClickListener(this)
+        binding.ivBack.setOnClickListener {
+            finish()
+        }
 
-
+        binding.btnBusy.setOnClickListener {
+            finish()
+        }
+        binding.btnAvailable.setOnClickListener {
+            finish()
+        }
     }
 
 
     override fun onClick(view: View?) {
         when (view?.id) {
-            R.id.btnNext -> {
-                finish()
-                startActivity(UploadDocumentsActivity.getIntent(this))
-            }
+
 
         }
     }
